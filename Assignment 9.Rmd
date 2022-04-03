@@ -24,10 +24,6 @@ dat<-Dessert_Data
 2) summarizes the three columns, and 
 ```{r}
 library(haven)
-library(dplyr)
-library(psych)
-library(car)
-library(sjPlot)
 library(ggplot2)
 
 summary(dat$Rating)
