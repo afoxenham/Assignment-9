@@ -9,6 +9,17 @@ Part 1
 
 Earlier in the semester, we discussed what workflows look like. Since then, we’ve spent approximately 8 weeks using R and thinking about other aspects of the course. Based on what you’ve learned, create a workflow for analyzing data.
 
+Workflow:
+Obtain data
+Clean data
+Upload the data
+Rename the data "dat"
+load necessary packages 
+Create sections in R for each Research Question and planned analyses
+Run the analyses
+Confirm results by looking at graphs and summary of data
+
+
 Part 2
 
 In this section of the assignment, I will ask you to work through making your own workflow and practice using some of the tools we’ve discussed.
@@ -21,7 +32,7 @@ Create an R Markdown file in the R project that
 dat<-Dessert_Data
 ```
 
-2) summarizes the three columns, and 
+2) summarizes the three columns 
 ```{r}
 library(haven)
 library(ggplot2)
@@ -35,5 +46,7 @@ dat$Dessert
 ggplot(dat, aes(Rating,Quantity))+geom_point()+facet_wrap(~Dessert)+theme_minimal()
 ```
 Create your own repository of this Project on GitHub and paste a link to your repository here.
+
 Link: https://github.com/afoxenham/Assignment-9
+
 Generate a readme file to help me figure out what you’ve done :)
